@@ -1,95 +1,10 @@
 ﻿# NVGIL
 
-> a four-step cyber gym generator that could build various cyber scenarios.
-
-## Documentation
-
-Read the [Quick introduction](/docs/quickintro.md) to the project.
-
-## Build status
-
-| Type | Branch | Status |
-| ---  | ------ | ------ |
-| CI   | master | ![.github/workflows/ci.yml](https://github.com/microsoft/CyberBattleSim/workflows/.github/workflows/ci.yml/badge.svg) |
-| Docker image | master | ![.github/workflows/build-container.yml](https://github.com/microsoft/CyberBattleSim/workflows/.github/workflows/build-container.yml/badge.svg) |
-
-## Benchmark
-
-See [Benchmark](/docs/benchmark.md).
+> This work inherits from ([CyberBattleSim](https://github.com/microsoft/CyberBattleSim)), updating the action space for attackers and the corresponding results, as well as providing detailed information about one single machine. And most importantly, it is a four-step cyber gym generator that could build various cyber scenarios. 
 
 ## Setting up a dev environment
 
-It is strongly recommended to work under a Linux environment, either directly or via WSL on Windows.
-Running Python on Windows directly should work but is not supported anymore.
-
-Start by checking out the repository:
-
-   ```bash
-   git clone https://github.com/microsoft/CyberBattleSim.git
-   ```
-
-### OS components
-
-If you get the following error when running the papermill on the notebooks
-(or alternatively when running `orca --help`)
-```
-/home/wiblum/miniconda3/envs/cybersim/lib/orca_app/orca: error while loading shared libraries: libXss.so.1: cannot open shared object file: No such file or directory
-```
-or other share libraries like `libgdk_pixbuf-2.0.so.0`,
-Then run the following command:
-```
-sudo apt install libnss3-dev libgtk-3-0 libxss1 libasound2-dev libgtk2.0-0 libgconf-2-4
-```
-
-### On Linux or WSL
-
-The instructions were tested on a Linux Ubuntu distribution (both native and via WSL).
-
-If conda is not installed already, you need to install it by running the `install_conda.sh` script.
-
-```bash
-bash install_conda.sh
-```
-
-Once this is done, open a new terminal and run the initialization script:
-```bash
-bash init.sh
-```
-This will create a conda environmen named `cybersim` with all the required OS and python dependencies.
-
-To activate the environment run:
-
-```bash
-conda activate cybersim
-```
-
-#### Windows Subsystem for Linux
-
-The supported dev environment on Windows is via WSL.
-You first need to install an Ubuntu WSL distribution on your Windows machine,
-and then proceed with the Linux instructions (next section).
-
-#### Git authentication from WSL
-
-To authenticate with Git, you can either use SSH-based authentication or
-alternatively use the credential-helper trick to automatically generate a
-PAT token. The latter can be done by running the following command under WSL
-([more info here](https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-git)):
-
-```ps
-git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-manager.exe"
-```
-
-#### Docker on WSL
-
-To run your environment within a docker container, we recommend running `docker` via Windows Subsystem on Linux (WSL) using the following instructions:
-[Installing Docker on Windows under WSL](https://docs.docker.com/docker-for-windows/wsl-tech-preview/)).
-
-### Windows (unsupported)
-
-This method is not maintained anymore, please prefer instead running under
-a WSL subsystem Linux environment.
-But if you insist you want to start by installing [Python 3.9](https://www.python.org/downloads/windows/) then in a Powershell prompt run the `./init.ps1` script.
+The dev enviroment is same as CyberBattleSim, please refer to [CyberBattleSim](https://github.com/microsoft/CyberBattleSim) for details. 
 
 ## Getting started quickly using Docker
 
