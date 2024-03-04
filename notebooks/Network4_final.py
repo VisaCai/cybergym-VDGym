@@ -17,8 +17,6 @@ logging.basicConfig(stream=sys.stdout, level=logging.ERROR, format="%(levelname)
 # Papermill notebook parameters
 
 #############
-# gymid = 'CyberBattleTiny-v0'
-#############
 gymid = "network4-v0"
 env_size = None
 iteration_count = 1500
