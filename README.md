@@ -12,11 +12,8 @@ The dev enviroment is same as CyberBattleSim, please refer to [CyberBattleSim](h
 ## Jupyter notebooks
 
 To quickly get familiar with the project, you can open one of the provided Jupyter notebooks to play interactively with
-the gym environments. At the root of the repository run the following command and then open the notebook in the `notebooks` folder
-from the Jupyter interface:
-
+the gym environments. At the root of the repository run the following command and then open the notebook in the `notebooks` folder.
 Some notebooks to get started:
-
 
 ## Citing this project
 
