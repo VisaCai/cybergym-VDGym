@@ -17,8 +17,6 @@ logging.basicConfig(stream=sys.stdout, level=logging.ERROR, format="%(levelname)
 # Papermill notebook parameters
 
 #############
-# gymid = 'CyberBattleTiny-v0'
-#############
 gymid = "network4-v0"
 env_size = None
 iteration_count = 1500
@@ -83,8 +81,6 @@ gym_env_for_train = gym.make(gymid, state = 'not_random', os_type = [], Local_vu
 
 
 for j in range(4):
-
-
     # Evaluate the Deep Q-learning agent
     dql_run = learner.epsilon_greedy_search(
         cyberbattle_gym_env=Network_List[j],
