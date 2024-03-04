@@ -17,8 +17,6 @@ logging.basicConfig(stream=sys.stdout, level=logging.ERROR, format="%(levelname)
 # Papermill notebook parameters
 
 #############
-# gymid = 'CyberBattleTiny-v0'
-#############
 gymid = "network4-v0"
 env_size = None
 iteration_count = 1500
@@ -77,16 +75,8 @@ network4 = gym.make(gymid, state = state, os_type = os_type, Local_vulnerabiliti
 # topology_graph = {(0,3),(3,1),(4,2),(4,6),(2,5),(6,8),(5,7),(8,7),(8,9)}
 
 Network_List = [network1, network2, network3, network4]
-
-# gym_env_for_train = gym.make(gymid, state = 'random', os_type = [], Local_vulnerabilities = [], Remote_vulnerabilities = [], node_values = [0, 30,50,60,60,100,100,200,200,600], topology_graph = set(), installnode = [])
-# # Evaluate the Deep Q-learning agent
-
-# filenamei = './Network4_results/my_dql_test_run1500' + '30' + '.pkl' #yuan_dql_test_run1500_' + 'network' + str(j+1) + '.pkl'
-# with open(filenamei, 'rb') as file:
-#     my_dql_test_runj = pickle.load(file)
     
 for j in range(4):
-
     exploit_my_dql_test_runj = learner.epsilon_greedy_search(
         cyberbattle_gym_env=Network_List[j],
         environment_properties=ep,
