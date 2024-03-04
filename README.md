@@ -22,7 +22,7 @@ Some notebooks to get started:
 
 ```bibtex
 @misc{msft:cybergym-NVGIL,
-  Author = {x}
+  Author = {TBA}
   Note = {Created by VisaCai.},
   Publisher = {GitHub},
   Howpublished = {\url{https://github.com/VisaCai/cybergym-NVGIL}},
