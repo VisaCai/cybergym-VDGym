@@ -18,7 +18,7 @@ Some notebooks to get started:
 ## Citing this project
 
 ```bibtex
-@misc{msft:cybergym-NVGIL,
+@misc{msft:cybergym-VDGym,
   Author = {TBA}
   Note = {Created by VisaCai.},
   Publisher = {GitHub},
