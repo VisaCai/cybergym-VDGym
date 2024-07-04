@@ -1,4 +1,4 @@
-﻿# NVGIL
+﻿# VDGym
 
 > This work inherits from ([CyberBattleSim](https://github.com/microsoft/CyberBattleSim)), updating the action space for attackers and the corresponding results, as well as providing detailed information about one single machine. And most importantly, it is a four-step cyber gym generator that could build various cyber scenarios. 
 
